@@ -71,8 +71,7 @@ Student-Social-Media-Addiction/
    bash scripts/run_test.sh
    ```
 
-Sure! Here's the same markdown section translated into English and adapted accordingly:
-
+<details>
 <summary><h2>Visualizations</h2></summary>
 
 This section presents the key generated figures and their paths within the project:
@@ -161,9 +160,11 @@ This section presents the key generated figures and their paths within the proje
 
 The project reveals a strong link between social media addiction and academic challenges. High usage correlates with lower sleep, more relationship conflicts, and diminished mental health. The predictive models provide a reliable framework to classify students at risk, guiding potential interventions.
 
+
 </details>
 
 ---
+
 
 <details>
   <summary><h1>Español</h1></summary>
@@ -237,8 +238,7 @@ Student-Social-Media-Addiction/
    bash scripts/run_test.sh
    ```
 
-Claro, aquí tienes el bloque en formato markdown con las imágenes más relevantes que aparecen en tu proyecto, siguiendo exactamente la estructura que me diste:
-
+<details>
 <summary><h2>Visualizaciones</h2></summary>
 
 En esta sección se muestran las imágenes clave generadas y su ruta dentro del proyecto:
