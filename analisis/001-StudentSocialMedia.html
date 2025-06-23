@@ -7518,7 +7518,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <details>
-<summary>English</summary>
+<summary><h2>English</h2></summary>
 <h1 id="Student-Social-Media-Addiction">Student Social Media Addiction<a class="anchor-link" href="#Student-Social-Media-Addiction">¶</a></h1><h2 id="About-Dataset">About Dataset<a class="anchor-link" href="#About-Dataset">¶</a></h2><h3 id="Overview">Overview<a class="anchor-link" href="#Overview">¶</a></h3><p>The Student Social Media &amp; Relationships dataset contains anonymized records of students’ social‐media behaviors and related life outcomes. It spans multiple countries and academic levels, focusing on key dimensions such as usage intensity, platform preferences, and relationship dynamics. Each row represents one student’s survey response, offering a cross‐sectional snapshot suitable for statistical analysis and machine‐learning applications.</p>
 <h3 id="Scope-&amp;-Coverage">Scope &amp; Coverage<a class="anchor-link" href="#Scope-&amp;-Coverage">¶</a></h3><ul>
 <li><strong>Population</strong>: Students aged 16–25 enrolled in high school, undergraduate, or graduate programs.</li>
@@ -7624,7 +7624,7 @@ a.anchor-link {
 
 
 <details>
-<summary>Español</summary>
+<summary><h2>Español</h2></summary>
 <h1 id="Adicci%C3%B3n-a-las-Redes-Sociales-en-Estudiantes">Adicción a las Redes Sociales en Estudiantes<a class="anchor-link" href="#Adicci%C3%B3n-a-las-Redes-Sociales-en-Estudiantes">¶</a></h1><h2 id="Acerca-del-Conjunto-de-Datos">Acerca del Conjunto de Datos<a class="anchor-link" href="#Acerca-del-Conjunto-de-Datos">¶</a></h2><h3 id="Resumen">Resumen<a class="anchor-link" href="#Resumen">¶</a></h3><p>El conjunto de datos sobre la Adicción a las Redes Sociales y las Relaciones de los Estudiantes contiene registros anonimados del comportamiento de los estudiantes en redes sociales y los resultados de su vida relacionados. Cubre múltiples países y niveles académicos, centrándose en dimensiones clave como la intensidad de uso, las preferencias de plataformas y las dinámicas de las relaciones. Cada fila representa la respuesta de un estudiante en una encuesta, ofreciendo una instantánea transversal adecuada para análisis estadísticos y aplicaciones de aprendizaje automático.</p>
 <h3 id="Alcance-y-Cobertura">Alcance y Cobertura<a class="anchor-link" href="#Alcance-y-Cobertura">¶</a></h3><ul>
 <li><strong>Población</strong>: Estudiantes de entre 16 y 25 años matriculados en programas de secundaria, pregrado o posgrado.</li>
@@ -9901,8 +9901,7 @@ weighted avg       1.00      1.00      1.00       141
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<details>
-<summary><h2>English</h2></summary>
+<details><summary><h2>English</h2></summary>
 <ol>
 <li><p><strong>Distribution of Countries and Academic Levels</strong>:</p>
 <ul>
@@ -9940,8 +9939,7 @@ weighted avg       1.00      1.00      1.00       141
 </ol>
 <h3 id="Conclusion:">Conclusion:<a class="anchor-link" href="#Conclusion:">¶</a></h3><p>Social media addiction seems to be strongly related to students' academic performance, with factors such as <strong>usage hours</strong>, <strong>conflicts</strong>, and <strong>mental health</strong> having a significant influence. The Random Forest model has shown excellent predictive performance, and the most popular platforms in the dataset are <strong>Instagram</strong> and <strong>TikTok</strong>.</p>
 </details>
-<details>
-<summary><h2>Español</h2></summary>
+<details><summary><h2>Español</h2></summary>
 <ol>
 <li><p><strong>Distribución de Países y Niveles Académicos</strong>:</p>
 <ul>
@@ -9982,16 +9980,30 @@ weighted avg       1.00      1.00      1.00       141
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=34ed2382-9ad1-47ea-927b-7c89320531ec">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=86087426-ae84-44d2-ab38-3e0087bfb5d8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">joblib</span>
+
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">final_model</span><span class="p">,</span> <span class="s2">"../models/student-social-media-model.pkl"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['../models/student-social-media-model.pkl']</pre>
 </div>
 </div>
 </div>

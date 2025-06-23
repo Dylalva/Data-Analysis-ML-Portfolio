@@ -1,0 +1,171 @@
+.experience-p {
+    display: inline-block;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #26a69a;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Arvo', sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: auto; /* Ajusta el alto máximo si el texto es largo */
+}
+
+.container-experience{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre tarjetas */
+    max-width: auto; /* Máximo ancho */
+    margin: 0 auto; /* Centrar */
+}
+
+/* Estilo general */
+.formation {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.formation h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contenedor en dos columnas */
+.formation-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre columnas */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cada elemento */
+.formation-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imágenes */
+.formation-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.formation-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animación hover */
+.formation-item:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: una sola columna en pantallas pequeñas */
+@media (max-width: 600px) {
+    .formation-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+}
+
+/* Estilo de la sección de proyectos */
+.projects {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contenedor de proyectos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta a diferentes tamaños de pantalla */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de cada proyecto */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Imágenes dentro de las tarjetas */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Contenedor de información */
+.project-info {
+    padding: 10px;
+}
+
+/* Título del proyecto */
+.project-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Descripción del proyecto */
+.project-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+    max-height: 60px; /* Máximo 3 líneas */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Botón de "Ver Código" */
+.button {
+    display: inline-block;
+    background-color: #26a69a;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00796b;
+}
+
+/* Efecto hover: Expande la descripción */
+.project-card:hover .project-description {
+    max-height: 200px; /* Se expande para mostrar más texto */
+}
