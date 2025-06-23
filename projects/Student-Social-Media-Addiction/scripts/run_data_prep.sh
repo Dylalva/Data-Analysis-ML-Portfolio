@@ -1,0 +1,1 @@
+python -m src.student-social-media.data.make_dataset

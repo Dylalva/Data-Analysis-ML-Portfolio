@@ -26,6 +26,8 @@ This project analyzes and models personality types (Extrovert vs. Introvert) bas
 * Python 3.9+
 * `pip install -r requirements.txt` (see [requirements.txt](requirements.txt))
 * Docker (optional)
+* Jupyter Notebook / VS Code
+* Scikit-learn, pandas, seaborn, matplotlib
 
 ---
 

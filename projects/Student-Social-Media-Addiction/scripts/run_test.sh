@@ -1,0 +1,1 @@
+python -m src.student-social-media.models.evaluate_model
